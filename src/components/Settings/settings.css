@@ -1,0 +1,14 @@
+dialog {
+  margin: auto;
+  width: 540px;
+  border: none;
+  border-radius: 24px;
+
+  .dialogHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 40px;
+    border-bottom: 1px solid #e3e1e1;
+    padding-block: 32px;
+  }
+}
