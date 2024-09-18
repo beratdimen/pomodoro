@@ -10,5 +10,107 @@ dialog {
     padding-inline: 40px;
     border-bottom: 1px solid #e3e1e1;
     padding-block: 32px;
+    h3 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 34.73px;
+      text-align: left;
+      color: #161932;
+    }
+  }
+
+  .inputContainer {
+    display: grid;
+    gap: 24px;
+    padding: 24px;
+
+    h3 {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 16.12px;
+      letter-spacing: 5px;
+      text-align: left;
+      color: #161932;
+    }
+  }
+
+  .inputBox {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #e3e1e1;
+    padding-bottom: 24px;
+
+    .input {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      label {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14.88px;
+        text-align: left;
+        color: #1e213f50;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+        border-radius: 16px;
+        padding-block: 12px;
+        background-color: #eff1fa;
+      }
+    }
+  }
+}
+
+.fontContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 1px solid #e3e1e1;
+
+  h3 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16.12px;
+    letter-spacing: 5px;
+    text-align: left;
+    color: #161932;
+  }
+
+  .fontContent {
+    display: flex;
+    gap: 16px;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 19.78px;
+      text-align: left;
+      border: none;
+    }
+
+    .kumbhSans {
+      background-color: #161932;
+      color: white;
+    }
+
+    .roboto {
+      font-family: "Roboto", sans-serif !important;
+      background-color: #eff1fa;
+    }
+
+    .spaceMono {
+      font-family: "Space Mono", monospace;
+      background-color: #eff1fa;
+    }
   }
 }

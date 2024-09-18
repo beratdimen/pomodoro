@@ -1,3 +1,6 @@
+import DialogColor from "./DialogColor";
+import DialogFont from "./DialogFont";
+import DialogTime from "./DialogTime";
 import "./settings.css";
 
 export default function Settings({ dialogRef }) {
@@ -14,6 +17,9 @@ export default function Settings({ dialogRef }) {
             <img src="./img/close.png" alt="" />
           </button>
         </div>
+        <DialogTime />
+        <DialogFont />
+        <DialogColor />
       </dialog>
     </div>
   );
