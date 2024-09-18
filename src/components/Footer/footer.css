@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

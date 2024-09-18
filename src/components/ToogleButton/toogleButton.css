@@ -1,13 +1,20 @@
-.toggle-container {
+.toggleContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+.content {
   display: flex;
   justify-content: center;
   background-color: #161932;
   border-radius: 48px;
   padding: 12px;
   width: fit-content;
+  z-index: 99;
 }
 
-.toggle-button {
+.toggleButton {
   background-color: transparent;
   color: #d7e0ff40;
   border: none;
@@ -21,11 +28,11 @@
   text-align: left;
 }
 
-.toggle-button.active {
+.toggleButton.active {
   background-color: #f87070;
   color: #1e213f;
 }
 
-.toggle-button:hover {
+.toggleButton:hover {
   color: #d7e0ff;
 }

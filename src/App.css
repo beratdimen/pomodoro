@@ -1,3 +1,11 @@
 * {
   font-family: "Kumbh Sans", sans-serif;
 }
+
+body {
+  background-color: #1e213f;
+}
+
+.container {
+  padding-block: 48px;
+}

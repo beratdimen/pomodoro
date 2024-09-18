@@ -11,16 +11,18 @@ export default function ToggleButton() {
   const btnList = ["Pomodoro", "Short Break", "Long Break"];
 
   return (
-    <div className="toggle-container">
-      {btnList.map((x) => (
-        <button
-          key={x}
-          className={`toggle-button ${active === x ? "active" : ""}`}
-          onClick={() => handleToggle(x)}
-        >
-          {x}
-        </button>
-      ))}
+    <div className="toggleContainer">
+      <div className="content">
+        {btnList.map((x) => (
+          <button
+            key={x}
+            className={`toggleButton ${active === x ? "active" : ""}`}
+            onClick={() => handleToggle(x)}
+          >
+            {x}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }

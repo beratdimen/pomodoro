@@ -1,0 +1,48 @@
+.bodyContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.div {
+  background: linear-gradient(315deg, #2e325a 0%, #0e112a 100%);
+  box-shadow: 50px 50px 100px 0px #121530;
+  box-shadow: -50px -50px 100px 0px #272c5a;
+  width: 410px;
+  height: 410px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .bodyStick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid #f87070;
+    border-radius: 50%;
+    width: 339px;
+    height: 339px;
+
+    .bodyTime {
+      text-align: center;
+
+      h2 {
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 124.02px;
+        letter-spacing: -5px;
+        text-align: center;
+        color: #d7e0ff;
+      }
+      
+      p {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.84px;
+        letter-spacing: 15px;
+        color: #d7e0ff;
+      }
+    }
+  }
+}
