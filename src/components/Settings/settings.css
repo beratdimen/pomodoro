@@ -117,6 +117,11 @@
     display: flex;
     gap: 16px;
 
+    button.active {
+      background-color: #161932;
+      color: white;
+    }
+
     button {
       display: flex;
       align-items: center;
@@ -132,8 +137,7 @@
     }
 
     .kumbhSans {
-      background-color: #161932;
-      color: white;
+      background-color: #eff1f2;
     }
 
     .roboto {

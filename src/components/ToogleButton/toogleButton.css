@@ -28,8 +28,18 @@
   text-align: left;
 }
 
-.toggleButton.active {
+.toggleButton.active.orange {
   background-color: #f87070;
+  color: #1e213f;
+}
+
+.toggleButton.active.lightBlue {
+  background-color: #70f3f8;
+  color: #1e213f;
+}
+
+.toggleButton.active.purple {
+  background-color: #d881f8;
   color: #1e213f;
 }
 

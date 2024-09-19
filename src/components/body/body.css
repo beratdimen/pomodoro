@@ -18,8 +18,9 @@
   .bodyStick {
     display: flex;
     justify-content: center;
-    align-items: center;
     border: 6px solid #f87070;
+
+    align-items: center;
     border-radius: 50%;
     width: 339px;
     height: 339px;
@@ -35,7 +36,7 @@
         text-align: center;
         color: #d7e0ff;
       }
-      
+
       p {
         font-size: 16px;
         font-weight: 700;
@@ -46,3 +47,23 @@
     }
   }
 }
+
+.bodyStick.orange {
+  border: 6px solid #f87070;
+}
+
+.bodyStick.lightBlue {
+  border: 6px solid #70f3f8;
+}
+
+.bodyStick.purple {
+  border: 6px solid #d881f8;
+}
+
+/* .orange .bodyStick {
+  border: 6px solid #f87070;
+}
+
+.lightBlue .bodyStick {
+  border: 6px solid #70f3f8;
+} */

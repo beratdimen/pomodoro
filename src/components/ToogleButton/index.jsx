@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./toogleButton.css";
 
-export default function ToggleButton() {
+export default function ToggleButton({ color }) {
   const [active, setActive] = useState("Pomodoro");
 
   const handleToggle = (option) => {
@@ -16,7 +16,7 @@ export default function ToggleButton() {
         {btnList.map((x) => (
           <button
             key={x}
-            className={`toggleButton ${active === x ? "active" : ""}`}
+            className={`toggleButton ${active === x ? "active" : ""} ${color}`}
             onClick={() => handleToggle(x)}
           >
             {x}
