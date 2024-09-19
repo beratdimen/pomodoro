@@ -1,66 +1,99 @@
-dialog {
-  margin: auto;
-  width: 540px;
-  border: none;
-  border-radius: 24px;
+.dialogContainer {
+  position: relative;
+  dialog {
+    margin: auto;
+    width: 540px;
+    border: none;
+    border-radius: 24px;
+    z-index: 1000;
 
-  .dialogHeader {
-    display: flex;
-    justify-content: space-between;
-    padding-inline: 40px;
-    border-bottom: 1px solid #e3e1e1;
-    padding-block: 32px;
-    h3 {
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 34.73px;
-      text-align: left;
-      color: #161932;
-    }
-  }
-
-  .inputContainer {
-    display: grid;
-    gap: 24px;
-    padding: 24px;
-
-    h3 {
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 16.12px;
-      letter-spacing: 5px;
-      text-align: left;
-      color: #161932;
-    }
-  }
-
-  .inputBox {
-    display: flex;
-    gap: 20px;
-    border-bottom: 1px solid #e3e1e1;
-    padding-bottom: 24px;
-
-    .input {
+    .dialogHeader {
       display: flex;
-      flex-direction: column;
-      gap: 4px;
-
-      label {
-        font-size: 12px;
+      justify-content: space-between;
+      padding-inline: 40px;
+      border-bottom: 1px solid #e3e1e1;
+      padding-block: 32px;
+      h3 {
+        font-size: 28px;
         font-weight: 700;
-        line-height: 14.88px;
+        line-height: 34.73px;
         text-align: left;
-        color: #1e213f50;
-      }
-
-      input {
-        width: 100%;
-        border: none;
-        border-radius: 16px;
-        padding-block: 12px;
-        background-color: #eff1fa;
+        color: #161932;
       }
     }
+
+    .inputContainer {
+      display: grid;
+      gap: 24px;
+      padding: 24px;
+
+      h3 {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16.12px;
+        letter-spacing: 5px;
+        text-align: left;
+        color: #161932;
+      }
+    }
+
+    .inputBox {
+      display: flex;
+      gap: 20px;
+      border-bottom: 1px solid #e3e1e1;
+      padding-bottom: 24px;
+
+      .input {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        label {
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 14.88px;
+          text-align: left;
+          color: #1e213f50;
+        }
+
+        input {
+          width: 100%;
+          border: none;
+          border-radius: 16px;
+          padding-block: 12px;
+          background-color: #eff1fa;
+        }
+      }
+    }
+
+    .applyBtn {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.84px;
+      text-align: center;
+      background-color: #f87070;
+      color: white;
+      padding: 16px 48px;
+      border-radius: 32px;
+      margin-top: 24px;
+      position: relative;
+      left: 180px;
+    }
+  }
+
+  .dialogOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a0c1c80;
+    display: none;
+    z-index: 999;
+  }
+
+  dialog[open] ~ .dialogOverlay {
+    display: block;
   }
 }
 
@@ -111,6 +144,55 @@ dialog {
     .spaceMono {
       font-family: "Space Mono", monospace;
       background-color: #eff1fa;
+    }
+  }
+}
+
+.colorContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 1px solid #e3e1e1;
+
+  h3 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16.12px;
+    letter-spacing: 5px;
+    text-align: left;
+    color: #161932;
+  }
+
+  .colorContent {
+    display: flex;
+    gap: 16px;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 19.78px;
+      text-align: left;
+      border: none;
+    }
+
+    .orange {
+      background-color: #f87070;
+      color: black;
+    }
+
+    .lightBlue {
+      background-color: #70f3f8;
+    }
+
+    .purple {
+      background-color: #d881f8;
     }
   }
 }

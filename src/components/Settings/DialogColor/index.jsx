@@ -3,9 +3,9 @@ export default function DialogColor() {
     <div className="colorContainer">
       <h3>Color</h3>
       <div className="colorContent">
-        <button className="orange">Aa</button>
-        <button className="lightBlue">Aa</button>
-        <button className="purple">Aa</button>
+        <button className="orange"></button>
+        <button className="lightBlue"> </button>
+        <button className="purple"> </button>
       </div>
     </div>
   );

@@ -20,7 +20,9 @@ export default function Settings({ dialogRef }) {
         <DialogTime />
         <DialogFont />
         <DialogColor />
+        <button className="applyBtn">Apply</button>
       </dialog>
+      <div className="dialogOverlay"></div>
     </div>
   );
 }
