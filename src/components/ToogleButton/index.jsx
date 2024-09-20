@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./toogleButton.css";
 
-export default function ToggleButton({ color }) {
-  const [active, setActive] = useState("Pomodoro");
+export default function ToggleButton({ color, setCurrentMode, currentMode }) {
+  const [active, setActive] = useState(currentMode || "Pomodoro");
 
   const handleToggle = (option) => {
     setActive(option);
+    setCurrentMode(option);
   };
 
   const btnList = ["Pomodoro", "Short Break", "Long Break"];
+
+  useEffect(() => {
+    setCurrentMode(active); 
+  }, [active, setCurrentMode]);
 
   return (
     <div className="toggleContainer">

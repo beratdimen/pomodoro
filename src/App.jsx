@@ -8,20 +8,31 @@ import "./App.css";
 function App() {
   const [font, setFont] = useState("kumbhSans");
   const [color, setColor] = useState("orange");
+  const [pomodoroTimes, setPomodoroTimes] = useState({
+    pomodoro: 25,
+    shortBreak: 5,
+    longBreak: 15,
+  });
+  const [currentMode, setCurrentMode] = useState("Pomodoro");
 
   const applySettings = (selectedFont, selectedColor) => {
     setFont(selectedFont);
     setColor(selectedColor);
   };
 
-  console.log(font);
-
   return (
-    <div className={`container ${font} `}>
+    <div className={`container ${font}`}>
       <Header />
-      <ToggleButton color={color} />
-      <Body color={color} />
-      <Footer applySettings={applySettings} />
+      <ToggleButton
+        color={color}
+        setCurrentMode={setCurrentMode}
+        currentMode={currentMode}
+      />
+      <Body color={color} time={pomodoroTimes[currentMode.toLowerCase()]} />
+      <Footer
+        applySettings={applySettings}
+        setPomodoroTimes={setPomodoroTimes}
+      />
     </div>
   );
 }

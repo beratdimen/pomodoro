@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import "./footer.css";
 import Settings from "../Settings";
 
-export default function Footer({ applySettings }) {
+export default function Footer({ applySettings, setPomodoroTimes }) {
   const dialogRef = useRef(false);
 
   const openModal = () => {
@@ -14,7 +14,11 @@ export default function Footer({ applySettings }) {
       <button onClick={openModal}>
         <img src="./img/settings.png" alt="" />
       </button>
-      <Settings dialogRef={dialogRef} applySettings={applySettings} />
+      <Settings
+        dialogRef={dialogRef}
+        applySettings={applySettings}
+        setPomodoroTimes={setPomodoroTimes}
+      />
     </div>
   );
 }

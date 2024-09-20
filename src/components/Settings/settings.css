@@ -1,5 +1,6 @@
 .dialogContainer {
   position: relative;
+
   dialog {
     margin: auto;
     width: 540px;
@@ -13,6 +14,7 @@
       padding-inline: 40px;
       border-bottom: 1px solid #e3e1e1;
       padding-block: 32px;
+
       h3 {
         font-size: 28px;
         font-weight: 700;
@@ -198,5 +200,18 @@
     .purple {
       background-color: #d881f8;
     }
+  }
+}
+
+@media (width <=425px) {
+  .fontContainer {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .colorContainer {
+    flex-direction: column;
+    gap: 16px;
   }
 }
