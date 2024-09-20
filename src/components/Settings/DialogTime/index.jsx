@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../settings.css";
 
 export default function DialogTime() {
@@ -9,12 +9,6 @@ export default function DialogTime() {
   const handlePomodoroChange = (e) => setPomodoro(Number(e.target.value));
   const handleShortBreakChange = (e) => setShortBreak(Number(e.target.value));
   const handleLongBreakChange = (e) => setLongBreak(Number(e.target.value));
-
-  useEffect(() => {
-    setPomodoro(pomodoro);
-    setShortBreak(shortBreak);
-    setLongBreak(longBreak);
-  }, [pomodoro, shortBreak, longBreak]);
 
   return (
     <div className="inputContainer">
